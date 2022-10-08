@@ -17,14 +17,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1=(Button)findViewById(R.id.button_Login);
+        btn1=(Button)findViewById(R.id.button_Login);//button_Login
+        btn1.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent l = new Intent(MainActivity.this,Monitor.class);
+                startActivity(l);
+            }
+        }));
 
-        btn2=(Button)findViewById(R.id.button_SignUp);
+
+        btn2=(Button)findViewById(R.id.button_SignUp);//button_SignUp
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                Intent intent = new Intent(MainActivity.this,MainActivity_SignUp.class);
+                startActivity(intent);
             }
         });
     }
@@ -32,10 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //se crea el método de tipo Inten del boton SignUp
-    public void SignUp (View view){
-        Intent signup = new Intent(this, MainActivity_SignUp.class);
-        startActivity(signup);
-    }
+
 
 
 }
