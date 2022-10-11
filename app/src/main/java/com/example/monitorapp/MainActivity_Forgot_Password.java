@@ -21,7 +21,6 @@ public class MainActivity_Forgot_Password extends AppCompatActivity {
 
         btn7=findViewById(R.id.button_login); //button_login
         //Asignaremos este boton solo para regresar al login
-        btn7=findViewById(R.id.button_Login_signup);//button_Login_signup
         btn7.setOnClickListener(view -> {
             Intent b = new Intent(MainActivity_Forgot_Password.this,MainActivity.class);
             startActivity(b);
