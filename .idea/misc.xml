@@ -7,10 +7,11 @@
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/drawable/button_rounded.xml" value="0.176" />
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/drawable/button_rounded_2.xml" value="0.168" />
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1655" />
+        <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/drawable/splashscreen.xml" value="0.1655" />
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/layout/activity_main_forgot_password.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/layout/activity_main_sign_up.xml" value="0.24365942028985507" />
-        <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/layout/activity_monitor.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/root/AndroidStudioProjects/MonitorApp/app/src/main/res/layout/activity_monitor.xml" value="0.264" />
       </map>
     </option>
   </component>
