@@ -22,9 +22,8 @@ public class MainActivity_SignUp extends AppCompatActivity {
         pass1=findViewById(R.id.id_contraseña); // id_contraseña
         pass2=findViewById(R.id.id_confirmContraseña); // id_confirmContraseña
 
-        btn3=findViewById(R.id.button_Sign_Up);//button_Sign_Up
-
         //simularemos un ingreso de nuevo de credenciales
+        btn3=findViewById(R.id.button_Sign_Up);//button_Sign_Up
         btn3.setOnClickListener(view -> {
             if (mail.getText().toString().equals("admin@gmail.com")&&pass1.getText().toString().equals("admin")&&pass2.getText().toString().equals("admin")){
                 Intent a = new Intent(MainActivity_SignUp.this, Monitor.class);
@@ -33,9 +32,9 @@ public class MainActivity_SignUp extends AppCompatActivity {
             }
             else{
                 // en caso de no ser validada la credencial, emergenra un mensaje de advertencia
+                finish();
                 Toast.makeText(MainActivity_SignUp.this,"Intente Nuevamente",Toast.LENGTH_LONG).show();
             }
-
 
         });
 

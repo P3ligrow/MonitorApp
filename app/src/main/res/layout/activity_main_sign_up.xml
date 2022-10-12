@@ -16,11 +16,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Correo"
+        android:hint="@string/correo"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/id_contraseña"
@@ -31,11 +34,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Ingrese Contraseña"
+        android:hint="@string/ingrese_contrase_a"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_correo" />
+        app:layout_constraintTop_toBottomOf="@+id/id_correo"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/id_confirmContraseña"
@@ -46,11 +52,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Repita Contraseña"
+        android:hint="@string/repita_contrase_a"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_contraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/id_contraseña"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button_Sign_Up"
@@ -60,7 +69,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_confirmContraseña" />
@@ -68,15 +77,17 @@
     <Button
         android:id="@+id/button_Login_signup"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_2"
-        android:text="Login"
+        android:text="@string/login"
+        android:textColor="#283593"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Sign_Up"
-        android:layout_height="wrap_content"/>
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_Forgot_Pass"
@@ -85,7 +96,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="Forgot Password"
+        android:text="@string/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Login_signup" />

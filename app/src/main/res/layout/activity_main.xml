@@ -16,11 +16,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/nombre"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Id_password"
@@ -31,12 +34,15 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Id_correo" />
+        app:layout_constraintTop_toBottomOf="@+id/Id_correo"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Id_correo"
@@ -49,9 +55,12 @@
         android:ems="10"
         android:hint="Correo"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Id_Nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/Id_Nombre"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button_Login"
@@ -75,10 +84,12 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_2"
         android:text="Sign Up"
+        android:textColor="#283593"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_Login" />
+        app:layout_constraintTop_toBottomOf="@+id/button_Login"
+        tools:ignore="TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

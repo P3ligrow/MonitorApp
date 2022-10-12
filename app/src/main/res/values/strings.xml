@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MonitorApp</string>
+    <string name="correo">Correo</string>
+    <string name="ingrese_contrase_a">Ingrese Contraseña</string>
+    <string name="repita_contrase_a">Repita Contraseña</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="nombre">Nombre</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="monitorapp">monitorApp</string>
+    <string name="_99_9">99.9</string>
+    <string name="_99_9_">99.9</string>
+    <string name="salir">Salir</string>
+    <string name="pul_min">pul/min</string>
+    <string name="hbo2">%HbO2</string>
+    <string name="reingrese_nueva_contrase_a">Reingrese Nueva Contraseña</string>
+    <string name="send">Send</string>
+    <string name="correo_">Correo</string>
+    <string name="ingrese_nueva_contrase_a">Ingrese Nueva Contraseña</string>
+    <string name="login_">Login</string>
 </resources>
