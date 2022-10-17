@@ -18,7 +18,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_sign_up);
 
-        mail=findViewById(R.id.Id_correo); //id_correo
+        mail=findViewById(R.id.id_correo); //id_correo
         pass1=findViewById(R.id.id_contraseña); // id_contraseña
         pass2=findViewById(R.id.id_confirmContraseña); // id_confirmContraseña
 
@@ -29,6 +29,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
                 Intent a = new Intent(MainActivity_SignUp.this, Monitor.class);
                 Toast.makeText(MainActivity_SignUp.this,"Bienvenido",Toast.LENGTH_LONG).show();
                 startActivity(a);
+                // desde aqui codigo transisition de pantalla y limíar layou
             }
             else{
                 // en caso de no ser validada la credencial, emergenra un mensaje de advertencia
@@ -43,6 +44,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
         btn4.setOnClickListener(view -> {
             Intent b = new Intent(MainActivity_SignUp.this,MainActivity.class);
             startActivity(b);
+            // desde aqui cpdogp para transitcion y limpiar layou
         });
 
         //asignaremos este boton solo para la recuperacion de contraseña al MaintActivity_Forgot_Password
@@ -50,6 +52,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
         btn5.setOnClickListener(view -> {
             Intent c = new Intent(MainActivity_SignUp.this,MainActivity_Forgot_Password.class);
             startActivity(c);
+            //desde aqui codigo para transicion y limpiar layou
         });
     }
 

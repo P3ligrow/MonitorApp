@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent p = new Intent(MainActivity.this, Monitor.class);
                 Toast.makeText(MainActivity.this,"Bienvenido",Toast.LENGTH_LONG).show();
                 startActivity(p);
+                // desde aquí codigo animation transicion...
             }
             else{
                 // en caso de no ser validada la credencial, emergenra un mensaje de advertencia
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,MainActivity_SignUp.class);
             startActivity(intent);
+            // desde aqui codigo animacion codigo
         });
     }
 
