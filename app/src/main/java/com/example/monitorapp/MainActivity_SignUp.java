@@ -44,7 +44,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
         btn4.setOnClickListener(view -> {
             Intent b = new Intent(MainActivity_SignUp.this,MainActivity.class);
             startActivity(b);
-            // desde aqui cpdogp para transitcion y limpiar layou
+            overridePendingTransition(R.anim.from_left,R.anim.to_right);
         });
 
         //asignaremos este boton solo para la recuperacion de contraseña al MaintActivity_Forgot_Password
@@ -52,7 +52,7 @@ public class MainActivity_SignUp extends AppCompatActivity {
         btn5.setOnClickListener(view -> {
             Intent c = new Intent(MainActivity_SignUp.this,MainActivity_Forgot_Password.class);
             startActivity(c);
-            //desde aqui codigo para transicion y limpiar layou
+            overridePendingTransition(R.anim.to_left,R.anim.from_rigth);
         });
     }
 

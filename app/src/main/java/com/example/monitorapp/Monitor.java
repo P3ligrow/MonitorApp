@@ -1,5 +1,6 @@
 package com.example.monitorapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -15,8 +16,18 @@ public class Monitor extends AppCompatActivity {
         setContentView(R.layout.activity_monitor);
 
         btn8=findViewById(R.id.id_salir); //id_salir
-        btn8.setOnClickListener(view -> finish());//al ser click se cierra el programa
+
+
+        btn8.setOnClickListener(view -> {
+            Intent intent = new Intent(Monitor.this,MainActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.to_left,R.anim.from_rigth);
+
+
+        });
+
 
 
     }
 }
+

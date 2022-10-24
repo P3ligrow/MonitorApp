@@ -24,6 +24,7 @@ public class MainActivity_Forgot_Password extends AppCompatActivity {
         btn7.setOnClickListener(view -> {
             Intent b = new Intent(MainActivity_Forgot_Password.this,MainActivity.class);
             startActivity(b);
+            overridePendingTransition(R.anim.from_left,R.anim.to_right);
         });
 
 
