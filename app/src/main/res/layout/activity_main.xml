@@ -53,7 +53,7 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
-        android:hint="Correo"
+        android:hint="@string/Correo"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textColorHint="#546E7A"
@@ -67,13 +67,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
-        android:text="Login"
+        android:text="@string/Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Id_password" />
+        app:layout_constraintTop_toBottomOf="@+id/checkTerminos" />
 
     <Button
         android:id="@+id/button_SignUp"
@@ -83,13 +83,31 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_2"
-        android:text="Sign Up"
+        android:text="@string/Sign_up"
         android:textColor="#283593"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Login"
         tools:ignore="TextContrastCheck" />
+
+    <CheckBox
+        android:id="@+id/checkTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="190dp"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="@string/terminos_y_condiciones"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Id_password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

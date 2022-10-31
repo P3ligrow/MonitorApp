@@ -16,13 +16,13 @@ public class Monitor extends AppCompatActivity {
         setContentView(R.layout.activity_monitor);
 
         btn8=findViewById(R.id.id_salir); //id_salir
-
-
+        //el boton se mantiene a la escucha para volver al Login en el MainActivity
         btn8.setOnClickListener(view -> {
             Intent intent = new Intent(Monitor.this,MainActivity.class);
             startActivity(intent);
-            overridePendingTransition(R.anim.to_left,R.anim.from_rigth);
-
+            //se incorpora una transicion hacia la izquierda para salir
+            overridePendingTransition(R.anim.from_left,R.anim.to_right);
+            finish();
 
         });
 

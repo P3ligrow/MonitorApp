@@ -19,4 +19,9 @@
     <string name="correo_">Correo</string>
     <string name="ingrese_nueva_contrase_a">Ingrese Nueva Contraseña</string>
     <string name="login_">Login</string>
+    <string name="Correo">Correo</string>
+    <string name="Login">Login</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="t_rminos_y_condiciones">Términos y Condiciones</string>
+    <string name="terminos_y_condiciones">Términos y Condiciones</string>
 </resources>
